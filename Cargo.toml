@@ -1,0 +1,35 @@
+[package]
+name = "dnstui"
+version = "0.1.0"
+edition = "2024"
+description = "MXToolbox-style DNS, e-mail authentication and blocklist checks in the terminal"
+license = "MIT"
+readme = "README.md"
+keywords = ["dns", "mxtoolbox", "tui", "terminal", "email"]
+categories = ["command-line-utilities", "network-programming"]
+# let-chains (1.88); uuid, pulled in by ratatui, needs 1.89
+rust-version = "1.89"
+exclude = [".github/"]
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+color-eyre = "0.6.5"
+crossterm = { version = "0.29.0", features = ["event-stream"] }
+dirs = "7.0.0"
+futures = "0.3.34"
+hickory-resolver = { version = "0.26.3", features = ["tokio", "system-config"] }
+ratatui = "0.30.2"
+rustls = { version = "0.23.46", default-features = false, features = ["ring", "std", "tls12"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_yaml_ng = "0.10.0"
+tokio = { version = "1.54.1", features = ["full"] }
+tokio-rustls = { version = "0.26.6", default-features = false, features = ["ring", "tls12"] }
+webpki-roots = "1.0.11"
+x509-parser = "0.18.1"
+
+[profile.release]
+lto = "thin"
+strip = true
+
+[dev-dependencies]
+rcgen = "0.14.10"
