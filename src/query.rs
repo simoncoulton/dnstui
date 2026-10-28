@@ -1,4 +1,4 @@
-//! What the user asked for: a check and a target, parsed from MXToolbox-style
+//! What the user asked for: a check and a target, parsed from `check:target` style
 //! input such as `mx:example.com` or `dkim:example.com:selector1`.
 
 use std::net::IpAddr;

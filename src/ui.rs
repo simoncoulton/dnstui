@@ -260,7 +260,7 @@ fn welcome_lines(t: &Theme) -> Vec<Line<'static>> {
     vec![
         Line::raw(""),
         Line::from(vec![Span::raw(
-            "  Look up DNS, e-mail and blocklist records, like MXToolbox.",
+            "  Look up DNS, e-mail and blocklist records, in one place.",
         )]),
         Line::raw(""),
         Line::from(vec![Span::raw(

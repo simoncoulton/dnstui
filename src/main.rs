@@ -22,7 +22,7 @@ use color_eyre::eyre::{Result, WrapErr, eyre};
 use query::Check;
 use report::Severity;
 
-/// MXToolbox-style DNS, e-mail and blocklist checks in the terminal.
+/// DNS, e-mail authentication, blocklist, WHOIS and TLS checks in the terminal.
 ///
 /// With no subcommand this opens the terminal UI. A subcommand runs one check
 /// and prints the result exactly as the UI shows it, e.g. `dnstui whois

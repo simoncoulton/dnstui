@@ -2,10 +2,10 @@
 name = "dnstui"
 version = "0.1.0"
 edition = "2024"
-description = "MXToolbox-style DNS, e-mail authentication and blocklist checks in the terminal"
+description = "DNS, e-mail authentication, blocklist, WHOIS and TLS checks in the terminal"
 license = "MIT"
 readme = "README.md"
-keywords = ["dns", "mxtoolbox", "tui", "terminal", "email"]
+keywords = ["dns", "spf", "tui", "terminal", "email"]
 categories = ["command-line-utilities", "network-programming"]
 # let-chains (1.88); uuid, pulled in by ratatui, needs 1.89
 rust-version = "1.89"

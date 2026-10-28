@@ -1,5 +1,5 @@
 //! The result of a check as plain data: a table of records plus pass/warn/fail
-//! findings, like MXToolbox's result tables. No I/O and no rendering here.
+//! findings, like a mail-diagnostics report. No I/O and no rendering here.
 
 use std::time::Duration;
 

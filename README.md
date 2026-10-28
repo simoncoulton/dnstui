@@ -1,6 +1,6 @@
 # dnstui
 
-[MXToolbox](https://mxtoolbox.com)-style lookups in the terminal, built on
+DNS, e-mail authentication, blocklist, WHOIS and TLS lookups in the terminal, built on
 [ratatui](https://ratatui.rs) and [hickory-resolver](https://crates.io/crates/hickory-resolver).
 Type a domain or IP, pick a check, and get pass / warn / fail findings above the
 raw records.
@@ -73,7 +73,7 @@ is the same thing in the UI's `check:target` form.
 Exit status: `0` ok or info only, `1` warnings, `2` failures, `3` the target
 could not be understood. So `dnstui cert example.com || alert` works in a cron job.
 
-`QUERY` in the UI form is `[check:]target`, as on MXToolbox: `mx:example.com`,
+`QUERY` in the UI form is `[check:]target`, e.g. `mx:example.com`,
 `spf:example.com`, `blacklist:203.0.113.9`. Without a prefix the selected tab
 (or `default_check`) is used. URLs, `user@host` addresses and trailing dots are
 cleaned up, so you can paste whatever you have.
