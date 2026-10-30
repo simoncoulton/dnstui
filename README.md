@@ -11,15 +11,27 @@ The demo is the real program in [Ghostty](https://ghostty.org) with the
 Catppuccin Frappé theme and JetBrains Mono; `docs/demo/record.sh` regenerates it
 (see [Recording the demo](#recording-the-demo)).
 
-## Install
+## Installation
 
-Requires Rust 1.89 or newer.
+### macOS (Homebrew)
 
+Homebrew on macOS (Apple Silicon and Intel) is the supported way to install, with prebuilt binaries:
+
+```sh
+brew tap simoncoulton/dnstui https://github.com/simoncoulton/dnstui
+brew install dnstui
 ```
+
+### Arch Linux and other distributions
+
+There is no package for Arch or its derivatives yet. Build from source with a recent
+[Rust toolchain](https://rustup.rs) (1.89 or newer):
+
+```sh
+git clone https://github.com/simoncoulton/dnstui
+cd dnstui
 cargo install --path .        # installs ~/.cargo/bin/dnstui
 ```
-
-Linux and macOS are the targets; it is only tested on Linux so far.
 
 ## Usage
 
